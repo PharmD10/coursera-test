@@ -1,1 +1,38 @@
- 
+* {
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: Helvetica;
+}
+
+div {
+  background-color: blue;
+  font-family: Helvetica;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+p{
+	background-color: orange;
+	width: 25%;
+	float: left;
+	padding: 10px;
+	border: 20px;
+	border-color: black;
+	margin: 20px;
+	text-align: justify;
+}
+#chicken { /**Chicken**/
+  background-color: green;
+  font-size: 20px;
+  text-align: justify;
+}
+#beef { /**Beef**/
+  background-color: yellow;
+  color: black;
+}
+#sushi { /**Sushi**/
+  background-color: orange;
+}
