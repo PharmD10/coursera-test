@@ -1,6 +1,57 @@
-/*****Your site is very simple. It consists of a page heading and 3 sections (all in one row in the desktop view). Each section contains some text. You can make it dummy text/"lorem ipsum", it doesn't matter. How the sections are laid out on the screen depends on the width of the browser window. (Hint: use media queries discussed in Lecture 23.)****/
-/*****Layout: In the desktop view (992px and above), each of the 3 sections should take up equal amount of space on the screen. As you make the browser window wider or narrower, each section should become wider or narrower. (Hint: use percentages to define width and use the 'float' property. See Lecture 24). For a visual reference of this view, see the desktop mockup illustration below.
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Our Menu</title>
+<style>
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: Helvetica;
+}
 
-Layout: In the tablet view (between 768px and 991px, inclusively), the first 2 sections should be in the first row and be of equal size. The 3rd section should be in the second row and take up the entire row by itself. For a visual reference of this view, see the tablet mockup illustration below.
-
-Layout: In the mobile view (equal to or less than 767px), each section should take up the entire row. For a visual reference of this view, see the mobile mockup illustration below.*****/
+div {
+  background-color: blue;
+  font-family: Helvetica;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+p{
+	background-color: orange;
+	width: 25%;
+	float: left;
+	padding: 10px;
+	border: 20px;
+	border-color: black;
+	margin: 20px;
+	text-align: justify;
+}
+#chicken { /**Chicken**/
+  background-color: green;
+  font-size: 20px;
+  text-align: justify;
+}
+#beef { /**Beef**/
+  background-color: yellow;
+  color: black;
+}
+#sushi { /**Sushi**/
+  background-color: orange;
+}
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+<div>
+	<p id="chicken">Chicken<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed rhoncus erat. Vestibulum pretium efficitur orci, et pellentesque ante aliquam sed. Praesent consectetur risus massa, eu luctus risus placerat non. Etiam consectetur orci eu dictum scelerisque. Sed malesuada lobortis scelerisque. Cras interdum nulla eu libero faucibus, et feugiat nulla scelerisque. In auctor magna vel ligula euismod, eu semper magna cursus. Aliquam ut lectus orci. Proin efficitur tincidunt lacus vel suscipit. Vivamus bibendum risus sed mattis consequat. Donec eget ultricies nulla. Etiam porttitor porta turpis, feugiat sollicitudin tortor dictum semper. Cras vitae elit id est bibendum venenatis vitae eget purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc auctor tellus quis accumsan finibus. Pellentesque a commodo lacus, ac tempus est.</p>
+	<p id="beef">Beef<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum mollis urna rhoncus faucibus. Sed sollicitudin dictum auctor. Etiam sem est, ultrices vel ultrices eu, ornare sed mi. In in nibh elementum, posuere sapien lobortis, molestie sapien. Curabitur at urna feugiat, facilisis quam eget, ornare odio. Phasellus porta consequat magna ut euismod. Proin posuere lacinia magna, eget imperdiet nibh vulputate vitae.</p>
+	<p id="sushi">Sushi<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lobortis tortor sagittis feugiat. Donec feugiat fringilla augue, et tincidunt nulla ultrices sit amet. Fusce scelerisque congue ante non tempus. Duis quis nisi consectetur, accumsan lectus non, sollicitudin eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris rutrum risus eros. Nullam id congue dui. Morbi et ante et enim lobortis dictum. Nunc sem enim, suscipit eget gravida quis, eleifend ac turpis. Suspendisse at eleifend elit. Praesent dictum libero sit amet urna placerat, facilisis vulputate mi ultricies. Donec sit amet venenatis arcu.</p>
+</div>
+</body>
+</html>
