@@ -22,36 +22,127 @@ div {
   width: 100%;
   height: 100%;
 }
+.row {
+  width: 100%;
+}
 p{
 	background-color: orange;
-	width: 25%;
-	float: left;
-	padding: 10px;
+	width: 100%;
+	padding: 20px;
 	border: 20px;
 	border-color: black;
 	margin: 20px;
 	text-align: justify;
 }
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+    border: 10px solid green;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+    border: 1px solid red;
+    }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
 #chicken { /**Chicken**/
   background-color: green;
   font-size: 20px;
   text-align: justify;
+  float: left;
 }
 #beef { /**Beef**/
   background-color: yellow;
   color: black;
+  float: left;
 }
 #sushi { /**Sushi**/
   background-color: orange;
+  float: left;
 }
 </style>
 </head>
 <body>
 <h1>Our Menu</h1>
-<div>
-	<p id="chicken">Chicken<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed rhoncus erat. Vestibulum pretium efficitur orci, et pellentesque ante aliquam sed. Praesent consectetur risus massa, eu luctus risus placerat non. Etiam consectetur orci eu dictum scelerisque. Sed malesuada lobortis scelerisque. Cras interdum nulla eu libero faucibus, et feugiat nulla scelerisque. In auctor magna vel ligula euismod, eu semper magna cursus. Aliquam ut lectus orci. Proin efficitur tincidunt lacus vel suscipit. Vivamus bibendum risus sed mattis consequat. Donec eget ultricies nulla. Etiam porttitor porta turpis, feugiat sollicitudin tortor dictum semper. Cras vitae elit id est bibendum venenatis vitae eget purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc auctor tellus quis accumsan finibus. Pellentesque a commodo lacus, ac tempus est.</p>
-	<p id="beef">Beef<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum mollis urna rhoncus faucibus. Sed sollicitudin dictum auctor. Etiam sem est, ultrices vel ultrices eu, ornare sed mi. In in nibh elementum, posuere sapien lobortis, molestie sapien. Curabitur at urna feugiat, facilisis quam eget, ornare odio. Phasellus porta consequat magna ut euismod. Proin posuere lacinia magna, eget imperdiet nibh vulputate vitae.</p>
-	<p id="sushi">Sushi<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lobortis tortor sagittis feugiat. Donec feugiat fringilla augue, et tincidunt nulla ultrices sit amet. Fusce scelerisque congue ante non tempus. Duis quis nisi consectetur, accumsan lectus non, sollicitudin eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris rutrum risus eros. Nullam id congue dui. Morbi et ante et enim lobortis dictum. Nunc sem enim, suscipit eget gravida quis, eleifend ac turpis. Suspendisse at eleifend elit. Praesent dictum libero sit amet urna placerat, facilisis vulputate mi ultricies. Donec sit amet venenatis arcu.</p>
+<div class="row">
+  <div class="col-lg-4 col-md-6"><p id="chicken">Chicken<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed rhoncus erat. Vestibulum pretium efficitur orci, et pellentesque ante aliquam sed. Praesent consectetur risus massa, eu luctus risus placerat non. Etiam consectetur orci eu dictum scelerisque. Sed malesuada lobortis scelerisque. Cras interdum nulla eu libero faucibus, et feugiat nulla scelerisque. In auctor magna vel ligula euismod, eu semper magna cursus. Aliquam ut lectus orci. Proin efficitur tincidunt lacus vel suscipit. Vivamus bibendum risus sed mattis consequat. Donec eget ultricies nulla. Etiam porttitor porta turpis, feugiat sollicitudin tortor dictum semper. Cras vitae elit id est bibendum venenatis vitae eget purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc auctor tellus quis accumsan finibus. Pellentesque a commodo lacus, ac tempus est.</p></div>
+	<div class="col-lg-4 col-md-6"><p id="beef">Beef<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum mollis urna rhoncus faucibus. Sed sollicitudin dictum auctor. Etiam sem est, ultrices vel ultrices eu, ornare sed mi. In in nibh elementum, posuere sapien lobortis, molestie sapien. Curabitur at urna feugiat, facilisis quam eget, ornare odio. Phasellus porta consequat magna ut euismod. Proin posuere lacinia magna, eget imperdiet nibh vulputate vitae.</p></div>
+  <<div class="col-lg-4 col-md-6"><p id="sushi">Sushi<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat lobortis tortor sagittis feugiat. Donec feugiat fringilla augue, et tincidunt nulla ultrices sit amet. Fusce scelerisque congue ante non tempus. Duis quis nisi consectetur, accumsan lectus non, sollicitudin eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris rutrum risus eros. Nullam id congue dui. Morbi et ante et enim lobortis dictum. Nunc sem enim, suscipit eget gravida quis, eleifend ac turpis. Suspendisse at eleifend elit. Praesent dictum libero sit amet urna placerat, facilisis vulputate mi ultricies. Donec sit amet venenatis arcu.</p></div>
 </div>
 </body>
 </html>
